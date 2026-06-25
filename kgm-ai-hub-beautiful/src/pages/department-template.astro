@@ -1,0 +1,14 @@
+---
+import Layout from '../components/Layout.astro';
+const prompt = `You are helping a department manager at an Australian automotive distributor.
+
+Task: identify 5 practical ways AI could save time in this department.
+
+For each idea, include:
+- The task
+- Which tool is better: ChatGPT or Claude
+- Example prompt
+- Risk or limitation
+- Expected time saved`;
+---
+<Layout title="Department Template | AI Hub"><section class="recipe"><div class="eyebrow">👥 Department page</div><h1>Department use cases</h1><p class="lead">This is a template page. We can clone it for Sales, Product, Marketing, Finance, Warranty and others.</p><div class="panel"><h2>Example prompt</h2><div class="prompt">{prompt}</div><button class="btn copy" data-copy={prompt}>Copy prompt</button></div></section></Layout>

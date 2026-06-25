@@ -1,0 +1,15 @@
+Month,State,Dealer,Model,Channel,Units,Revenue_AUD,Gross_Margin_AUD,Test_Drives,Enquiries
+2026-01,VIC,Melbourne City,Torres,Retail,18,720000,68400,52,145
+2026-01,VIC,Geelong,Musso,Fleet,11,495000,39600,29,72
+2026-01,NSW,Sydney Metro,Torres,Retail,22,880000,74800,61,166
+2026-01,QLD,Brisbane North,Musso,Retail,15,675000,54000,41,110
+2026-02,VIC,Melbourne City,Torres,Retail,16,640000,60800,48,138
+2026-02,VIC,Geelong,Musso,Fleet,14,630000,50400,31,82
+2026-02,NSW,Sydney Metro,Torres,Retail,19,760000,64600,58,159
+2026-02,QLD,Brisbane North,Musso,Retail,17,765000,61200,44,117
+2026-03,VIC,Melbourne City,Torres,Retail,13,520000,49400,42,140
+2026-03,VIC,Geelong,Musso,Fleet,18,810000,64800,35,89
+2026-03,NSW,Sydney Metro,Torres,Retail,24,960000,81600,66,170
+2026-03,QLD,Brisbane North,Musso,Retail,12,540000,43200,39,126
+2026-03,WA,Perth South,Actyon,Retail,8,336000,30240,18,64
+2026-03,SA,Adelaide Central,Rexton,Retail,6,360000,32400,14,46

@@ -1,0 +1,56 @@
+---
+import Layout from '../components/Layout.astro';
+const base = import.meta.env.BASE_URL;
+const cards = [
+  ['🔍','Research','Competitors, market trends, reviews and industry news.','research-competitors'],
+  ['📊','Analyse','Excel, CSV, reports and dealer performance.','analyse-excel'],
+  ['📄','Understand PDFs','Summarise policies, bulletins, warranty docs and manuals.','pdfs'],
+  ['✍️','Write','Emails, bulletins, executive summaries and dealer updates.','emails'],
+  ['🎨','Create','Images, banners, icons, mockups and campaign visuals.','images'],
+  ['👥','By Department','Sales, Product, Marketing, Finance, Aftersales and more.','departments'],
+];
+---
+<Layout>
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">🚗 KGM Australia · Internal AI Toolkit</div>
+        <h1>AI skills people will actually use.</h1>
+        <p>No boring webinars. No 40-page PDFs. Practical AI recipes for daily work: research competitors, analyse reports, write better emails, create presentations and test prompts using sample files.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href={`${base}start-here/`}>Start here →</a>
+          <a class="btn" href={`${base}analyse-excel/`}>Try Excel challenge</a>
+        </div>
+      </div>
+      <div class="phone">
+        <div class="screen">
+          <span class="tag">AI Tip</span>
+          <h3>Talk to AI like a smart new employee.</h3>
+          <p style="color:var(--muted)">It is clever, fast and useful. It also has no idea what is happening unless you explain the context.</p>
+          <div class="mini-card"><b>Today’s quick win</b><span>Upload a report and ask for trends, risks and recommended next steps.</span></div>
+          <div class="mini-card"><b>Kevin says</b><span>“Analyse what, exactly?”</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <h2>What do you need today?</h2>
+        <p class="lead">Pick the task, not the tool. Each guide has a short explanation, ready-to-copy prompts and a small sample file where useful.</p>
+      </div>
+    </div>
+    <div class="grid">
+      {cards.map(([icon,title,text,href]) => <a class="card" href={`${base}${href}/`}><div class="icon">{icon}</div><h3>{title}</h3><p>{text}</p><span class="tag">3–5 min</span><span class="tag">Try it</span></a>)}
+    </div>
+  </section>
+  <section class="section">
+    <div class="kevin">
+      <div class="kevin-avatar">K</div>
+      <div>
+        <h3 style="margin:0 0 8px">Meet Kevin.</h3>
+        <p style="margin:0;color:var(--muted);line-height:1.55">Kevin can summarise 100 pages, write a dealer email and build a comparison table. Kevin also does not know your context, may sound confident when wrong, and should never be trusted blindly. Give Kevin context. Check Kevin’s work.</p>
+      </div>
+    </div>
+  </section>
+</Layout>

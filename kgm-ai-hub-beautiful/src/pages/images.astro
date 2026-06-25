@@ -1,0 +1,15 @@
+---
+import Layout from '../components/Layout.astro';
+const prompt = `Create a clean social media concept for an Australian automotive campaign.
+
+Vehicle: ute
+Theme: EOFY runout sale
+Audience: private buyers and small business owners
+Style: modern, confident, premium, not cheesy
+Deliverables:
+1. Three visual concepts
+2. Suggested headline and subheading
+3. Instagram story layout idea
+4. LinkedIn banner layout idea`;
+---
+<Layout title="Generate Images | AI Hub"><section class="recipe"><div class="eyebrow">🎨 Creative · 5 min</div><h1>Create and edit visuals without starting from scratch.</h1><p class="lead">Good for campaign mockups, icons, background removal, image extension, social posts and quick concept work.</p><div class="panel"><h2>Prompt</h2><div class="prompt">{prompt}</div><button class="btn copy" data-copy={prompt}>Copy prompt</button></div><div class="kevin"><div class="kevin-avatar">K</div><p style="margin:0;color:var(--muted)">For real vehicle images, always check that the model, lights, badge and body shape have not changed.</p></div></section></Layout>

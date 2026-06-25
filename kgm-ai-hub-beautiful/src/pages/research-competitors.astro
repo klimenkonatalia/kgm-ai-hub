@@ -1,0 +1,25 @@
+---
+import Layout from '../components/Layout.astro';
+const prompt = `Run a competitor research report for the Australian ute and SUV market.
+
+Focus on Toyota, Ford, Isuzu, Mitsubishi, GWM, BYD and any other relevant competitors.
+
+Please find:
+1. Current retail offers or promotions
+2. Key messaging used by each brand
+3. Price positioning where available
+4. Target customer segments
+5. Any notable trends in reviews or customer sentiment
+6. Opportunities for KGM Australia
+
+Present the result as an executive summary, then a comparison table, then recommended actions.`;
+---
+<Layout title="Research Competitors | AI Hub">
+  <section class="recipe">
+    <div class="eyebrow">🔍 Deep Research · 10–20 min</div>
+    <h1>Research competitors without opening 48 tabs.</h1>
+    <p class="lead">Good for Product, Sales and Marketing when you need a market snapshot, competitor promotions, review themes or emerging trends.</p>
+    <div class="panel"><h2>Use it for</h2><div class="steps"><div class="step">EOFY offers and runout campaigns</div><div class="step">Customer reviews and complaints</div><div class="step">Feature comparison</div><div class="step">Market trends and risks</div></div></div>
+    <div class="panel"><h2>Prompt</h2><div class="prompt">{prompt}</div><button class="btn copy" data-copy={prompt}>Copy prompt</button></div>
+  </section>
+</Layout>

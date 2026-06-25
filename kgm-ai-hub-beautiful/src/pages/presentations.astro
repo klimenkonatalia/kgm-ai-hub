@@ -1,0 +1,18 @@
+---
+import Layout from '../components/Layout.astro';
+const prompt = `Create a 10-slide presentation outline for an internal business update.
+
+Topic: AI tools rollout across KGM Australia
+Audience: department managers and staff
+Tone: practical, positive and not too corporate
+Include:
+1. Why we are introducing AI tools
+2. What employees can use them for
+3. Safety rules
+4. ChatGPT vs Claude
+5. Examples by department
+6. Next steps
+
+For each slide, provide title, key points and speaker notes.`;
+---
+<Layout title="Create Presentations | AI Hub"><section class="recipe"><div class="eyebrow">📈 Slides · 5 min</div><h1>Turn rough notes into a usable presentation.</h1><p class="lead">AI is useful for structure, story, speaker notes, slide titles and simplifying overloaded decks.</p><div class="panel"><h2>Prompt</h2><div class="prompt">{prompt}</div><button class="btn copy" data-copy={prompt}>Copy prompt</button></div></section></Layout>

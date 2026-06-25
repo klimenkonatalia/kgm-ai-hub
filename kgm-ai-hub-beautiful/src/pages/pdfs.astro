@@ -1,0 +1,13 @@
+---
+import Layout from '../components/Layout.astro';
+const base = import.meta.env.BASE_URL;
+const prompt = `I have uploaded a sample warranty bulletin.
+
+Please:
+1. Summarise it in plain English
+2. Extract all action items
+3. Turn the process into a checklist
+4. Identify anything that may be unclear for a dealer
+5. Draft a short dealer-facing explanation`;
+---
+<Layout title="Work with PDFs | AI Hub"><section class="recipe"><div class="eyebrow">📄 Documents · 4 min</div><h1>Turn long PDFs into useful answers.</h1><p class="lead">Useful for policies, bulletins, manuals, agreements, training material and long reports.</p><div class="panel"><h2>Try it</h2><a class="btn primary" href={`${base}downloads/sample-warranty-bulletin.txt`} download>Download sample bulletin</a></div><div class="panel"><h2>Prompt</h2><div class="prompt">{prompt}</div><button class="btn copy" data-copy={prompt}>Copy prompt</button></div></section></Layout>
