@@ -2,30 +2,35 @@
 <html lang="en">
   <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Start Here | KGM AI Hub</title><link rel="stylesheet" href="styles.css" /></head>
   <body>
-    <header class="topbar"><nav class="shell nav"><a class="brand" href="index.html"><img src="images/kgm-logo-white.png" alt="KGM" /><span>AI Hub</span></a><div class="nav-links"><a href="gpt-tools.html">GPT Tools</a><a href="prompt-library.html">Prompts</a><a href="departments.html">Departments</a><a href="rules.html">Rules</a></div></nav></header>
+    <header class="topbar">
+  <nav class="shell nav">
+    <a class="brand" href="index.html"><img src="images/kgm-logo-white.png" alt="KGM" /><span>AI Hub</span></a>
+    <div class="nav-links primary-nav">
+      <a class="nav-priority" href="start-here.html">Start Here</a>
+      <a class="nav-priority" href="rules.html">Rules</a>
+      <a href="gpt-tools.html">GPT Tools</a>
+      <a href="departments.html">Departments</a>
+      <a href="prompt-library.html">Prompts</a>
+      <a href="learn-more.html">Learn More</a>
+    </div>
+  </nav>
+</header>
     <main>
-      <section class="page-hero"><img class="hero-bg" src="images/hero-musso-performance.jpg" alt="" /><div class="shell hero-content"><div class="eyebrow">Start here</div><h1>How to get useful answers from AI.</h1><p class="lead">Good AI output is mostly about context. Tell it the task, audience, source material, constraints and output format.</p></div></section>
-      <section class="split"><div class="shell content">
-        <aside class="side-nav"><a href="#formula">Prompt formula</a><a href="#context">Context</a><a href="#review">Review</a><a href="#example">Example</a></aside>
-        <div class="article">
-          <article id="formula" class="article-section"><h2>The simple formula</h2><p>Use this structure when you want a reliable result:</p><pre>Role: You are helping KGM Australia.
-Task: What you need done.
-Context: Background, audience, model, department, source material.
-Output: Format, length, tone, table/bullets/email.
-Constraints: What to avoid, what must be included.
-Review: Ask it to flag assumptions and missing information.</pre></article>
-          <article id="context" class="article-section"><h2>Context matters</h2><p>AI does not automatically know our business, dealer network, tone, current offers, internal processes or the purpose of your task. Give it enough context so it can help like a capable new starter, not a mind reader.</p><ul><li>Who is the audience?</li><li>What decision will this support?</li><li>What does good output look like?</li><li>What should it not include?</li></ul></article>
-          <article id="review" class="article-section"><h2>Always review</h2><p>AI can be confident and still be wrong. Check facts, numbers, tone, dates, claims, prices, model details and anything customer-facing before using the output.</p><div class="notice">Do not paste passwords, credentials, security-sensitive information, confidential client data or sensitive company data into AI tools.</div></article>
-          <article id="example" class="article-section"><h2>Starter prompt</h2><pre>I work at KGM Australia in [department].
-I need help with [task].
-Audience: [who will read/use this].
-Context: [paste non-sensitive background].
-Please create [format].
-Tone: clear, practical and professional.
-Before answering, list any assumptions or missing information.</pre></article>
-        </div>
-      </div></section>
+      <section class="page-hero"><img class="hero-bg" src="images/hero-musso-performance.jpg" alt="" /><div class="shell hero-content"><div class="eyebrow">Start here first</div><h1>How to get useful answers from AI.</h1><p class="lead">Start with context, ask for a clear output, then review and refine.</p></div></section>
+      <section class="split"><div class="shell content"><aside class="side-nav"><a href="#mindset">Mindset</a><a href="#context">Context</a><a href="#prompt">Prompt formula</a><a href="#keep-going">Keep going</a><a href="#review">Review</a></aside><div class="article">
+<article id="mindset" class="article-section"><h2>Think of AI as a smart new employee</h2><p>ChatGPT and Claude are fast and useful, but they do not automatically understand KGM Australia, your department, the dealer network, internal reports, current priorities or what you already know. Treat AI like someone capable who has just joined the business: helpful, but missing context until you provide it.</p></article>
+<article id="context" class="article-section"><h2>AI cannot read your mind</h2><p>If the request is vague, the answer will usually be vague. The chat cannot climb into your brain and guess the audience, purpose, constraints, tone, source material or internal background. You need to give it the situation.</p><div class="big-quote"><p>Bad prompts make AI guess. Good prompts make AI work with your actual task.</p></div><div class="check-grid"><div class="check-card"><strong>Give background</strong><span>Department, market, model, dealer/customer type, and why the task matters.</span></div><div class="check-card"><strong>Give the audience</strong><span>Dealer, customer, GM, finance team, technical team, supplier or internal staff.</span></div><div class="check-card"><strong>Give constraints</strong><span>Length, tone, format, must-include points, what not to mention or invent.</span></div><div class="check-card"><strong>Give source material</strong><span>Paste notes, upload a file, or provide the data you want it to use.</span></div></div></article>
+<article id="prompt" class="article-section"><h2>A simple prompt formula</h2><pre>Role/context: I work in [department] at KGM Australia.
+Task: Help me [do the thing].
+Audience: This is for [dealer/customer/manager/team].
+Source material: Use the notes/data below.
+Constraints: Keep it under [length], use Australian English, do not invent facts.
+Output: Return it as [email/table/checklist/summary/slides].</pre></article>
+<article id="keep-going" class="article-section"><h2>Do not stop after the first answer</h2><p>The first answer is a draft. Ask follow-up questions: make it shorter, make it more practical, add a table, focus on dealers, use a less salesy tone, give risks, or explain assumptions.</p></article>
+<article id="review" class="article-section"><h2>Review before use</h2><p>AI can be confidently wrong. Check facts, figures, pricing, vehicle details, source links and anything customer-facing. Use it to speed up thinking and drafting, not to replace judgement.</p></article>
+</div></div></section>
     </main>
-    <footer class="footer"><div class="shell"><strong>KGM AI Hub</strong><span>Start with context, then review.</span></div></footer>
+    <footer class="footer"><div class="shell"><strong>KGM AI Hub</strong><span>Give context. Check output. Keep going.</span></div></footer>
+  <script src="script.js"></script>
   </body>
 </html>
