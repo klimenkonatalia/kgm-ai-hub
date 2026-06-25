@@ -1,7 +1,0 @@
----
-import Layout from '../components/Layout.astro';
-const base = import.meta.env.BASE_URL;
-const items = [
-['📊 Analyse Excel','Find trends, outliers and actions.','analyse-excel'],['🔍 Research Competitors','Use research for market intel.','research-competitors'],['📄 Work with PDFs','Summaries, checklists and Q&A.','pdfs'],['✍️ Write Emails','Dealer and supplier communication.','emails'],['🎨 Generate Images','Campaign visuals and quick edits.','images'],['📈 Create Presentations','Turn notes into slides.','presentations']];
----
-<Layout title="Everyday AI | AI Hub"><section class="section"><h2>Everyday AI recipes</h2><p class="lead">Short guides for tasks almost everyone can use.</p><div class="grid">{items.map(([i,t,d,h])=><a class="card" href={`${base}${h}/`}><div class="icon">{i}</div><h3>{t}</h3><p>{d}</p></a>)}</div></section></Layout>
