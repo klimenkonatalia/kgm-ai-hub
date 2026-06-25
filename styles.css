@@ -250,3 +250,28 @@ pre { overflow: auto; margin: 16px 0 0; padding: 18px; border-radius: 8px; color
 .home-start-strip { margin-top:-42px; position:relative; z-index:3; }
 .home-start-strip .card-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
 @media(max-width:780px){ .department-page-grid,.check-grid,.home-start-strip .card-grid{grid-template-columns:1fr;} }
+
+/* V4 task-first homepage additions */
+.priority-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.priority-card { padding: 24px; border-radius: 8px; background: #fff; border: 1px solid var(--line); box-shadow: 0 18px 45px rgba(18,20,28,.05); transition: transform 180ms ease, box-shadow 180ms ease; }
+.priority-card:hover { transform: translateY(-4px); box-shadow: 0 24px 55px rgba(18,20,28,.1); }
+.priority-card span { display: inline-flex; margin-bottom: 18px; color: var(--red); font-weight: 900; letter-spacing: .12em; }
+.priority-card h3 { margin: 0 0 10px; font-size: 26px; letter-spacing: -.03em; }
+.priority-card p { margin: 0; color: var(--muted); line-height: 1.6; }
+.task-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.task-card { display: block; padding: 28px; border-radius: 8px; border: 1px solid var(--line); background: linear-gradient(180deg, #fff 0%, #f7f7fa 100%); transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease; }
+.task-card.big { min-height: 250px; }
+.task-card:hover { transform: translateY(-5px); border-color: rgba(47,44,77,.24); box-shadow: 0 28px 60px rgba(47,44,77,.12); }
+.task-card > span { display: inline-flex; align-items: center; justify-content: center; width: 54px; height: 54px; margin-bottom: 22px; border-radius: 8px; background: rgb(47,44,77); color: #fff; font-size: 25px; }
+.task-card h3 { margin: 0 0 12px; font-size: 27px; line-height: 1.05; letter-spacing: -.035em; }
+.task-card p { margin: 0; color: var(--muted); line-height: 1.6; }
+.task-card em { display: inline-flex; margin-top: 22px; color: var(--red); font-style: normal; font-weight: 850; }
+.prompt-grid { display: grid; gap: 18px; }
+.resource-list { display: grid; gap: 12px; margin-top: 18px; }
+.resource-link { display: block; padding: 18px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.resource-link strong { display: block; margin-bottom: 6px; }
+.resource-link span { color: var(--muted); line-height: 1.5; }
+.department em { display:block; margin-top: 14px; color: var(--red); font-style: normal; font-weight: 850; }
+@media (max-width: 980px) {
+  .priority-grid, .task-grid { grid-template-columns: 1fr; }
+}
